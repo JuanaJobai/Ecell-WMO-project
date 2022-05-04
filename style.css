@@ -108,3 +108,16 @@ div.greetings img{
     border: 5px solid white;
     position: sticky;
 }
+div.date{
+    margin-top: -225px;
+    margin-left: 300px;
+    font-size: larger;
+    font-weight: 300;
+    color: #6400fb;
+    display: flex;
+    position: sticky;
+    background-color: inherit;
+}
+div.date span{
+    text-decoration: bold;
+}
