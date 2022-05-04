@@ -121,3 +121,81 @@ div.date{
 div.date span{
     text-decoration: bold;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.list{
+    position: relative;
+    background: white;
+    width: 350px;
+    height: 400px;
+}
+div.list h2{
+    background: #00a2ff;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+div.list ul{
+    position: relative;
+    padding: 20px;
+}
+div.list ul li{
+    position: relative;
+    list-style: none;
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+}
+div.list ul li:last-child{
+    border-bottom: one;
+} 
+div.list ul label{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+div.list ul li label input{
+    visibility: hidden;
+    appearance: none;
+}
+div.list ul li label p{
+    position: relative;
+}
+div.list ul li label span{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list ul li label span::before{
+    content: '';
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    transform: rotate(-40deg);
+}
+div.list ul li label input:checked ~ p{
+    text-decoration: line-through;
+    color: #ccc;
+}
+div.list ul li label input:checked ~ span{
+    background: #0386d2;
+    border: 1px solid #0386d2;
+}
+div.list ul li label input:checked ~ span::before{
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+div.list{
+    margin-top: 25px;
+    margin-left: 250px;
+}
