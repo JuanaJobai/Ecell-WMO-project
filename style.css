@@ -126,6 +126,10 @@ body{
     justify-content: center;
     align-items: center;
 }
+section.content{
+    display: flex;
+    position: relative;
+}
 div.list{
     position: relative;
     background: white;
@@ -199,7 +203,91 @@ div.list ul li label input:checked ~ span::before{
 div.list{
     margin-top: 25px;
     margin-left: 250px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
+.emails{
+    position: absolute;
+    right: 15px;
+    display: grid;
+    margin-right: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: monospace;
+    width: 300px;
+    height: 200px;
+}
+.icon{
+    cursor:pointer;
+    margin-right: 50px;
+    line-height: 60px;
+    height: 50px;
+    width: 75px;
+    position: absolute;
+    right: 10px;
+    margin-right: 10px;
+}
+.icon span{
+    background-color: #f76b6b;
+    padding: 7px;
+    border-radius: 50%;
+    color: #ffffff;
+    vertical-align: top;
+    margin-left: -25px;
+}
+.icon img{
+    display: inline-block;
+    width: 45px;
+    margin-top: 20px;
+    background-color: #999;
+    border-radius: 50%;
+}
+.icon:hover{
+    opacity: 0.5;
+}
+
+.box{
+    width: 300px;
+    position: absolute;
+    top: 63px;
+    right: 35px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+.box h2{
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #999;
+}
+.box h2 span{
+    color: #ff0000;
+}
+.contentbox{
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    padding: 15px 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.contentbox:hover {
+    background-color: #eee;
+}
+.contentbox img{
+    display: block;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.contentbox .text h4{
+    color: #777777;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.contentbox .text p{
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+
 @media screen and (max-width: 1400px){
     div.greetings h1{
         display: flex;
